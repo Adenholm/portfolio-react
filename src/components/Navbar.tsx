@@ -4,13 +4,13 @@ const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <nav className="bg-transparent p-4 w-screen">
+        <nav className="bg-transparent p-4 w-screen sticky top-0 z-50">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-white text-lg font-bold">MyPortfolio</div>
                 <div className="block lg:hidden bg-transparent">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="text-white focus:outline-none bg-blue-500"
+                        className="text-white focus:outline-none"
                     >
                         <svg
                             className="w-6 h-6"
