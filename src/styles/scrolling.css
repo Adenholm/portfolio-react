@@ -1,0 +1,25 @@
+
+.scroll-container {
+    overflow: hidden;
+}
+
+.scroll-content {
+    display: flex;
+    gap: -10px;
+    animation: scroll 60s linear infinite;
+}
+
+.scroll-content img {
+    filter: blur(0px);
+}
+
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
