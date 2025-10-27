@@ -2,13 +2,14 @@ import React from 'react';
 import image from '../../assets/images/dog.png';
 import me from '../../assets/images/me.jpg';
 import Experiences from './Experiences';
+import '../../styles/float.css';
 
 const Home: React.FC = () => {
     return (
         <>
             <div className="min-h-screen flex flex-col items-center justify-center lg:flex-row">
                 <h1 className="pt-12 md:text-8xl text-6xl font-[Josefin_sans] text-amber-50 md:w-3xl w-96">HANNA ADENHOLM</h1>
-                <img src={image} alt="dog" className="lg:w-2xl w-3/4"/>
+                <img src={image} alt="dog" className="lg:w-2xl w-3/4 animate-float"/>
             </div>
             <div className="flex w-fill justify-center bg-amber-50 p-24 flex-col gap-8">
                 <h1 className="text-5xl font-[Josefin_sans] text-amber-900">Who am I?</h1>
