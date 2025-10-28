@@ -1,113 +1,84 @@
-import React from 'react';
+
 import image from '../../assets/images/dog.png';
-import me from '../../assets/images/me.jpg';
-import Experiences from './Experiences';
+import '../../styles/float.css';
+import ProjectCard from '../../components/ProjectCard';
+import flowerimg from '../../assets/images/flower.png';
+import recipeimg from '../../assets/images/recipe.png';
+import mobileimg from '../../assets/images/mobile.png';
+import quacktalesimg from '../../assets/images/quacktales.gif';
+import ScrollingBg from '../../components/ScrollingBg';
+import { useNavigate } from 'react-router-dom';
 
 const Home: React.FC = () => {
+    const navigate = useNavigate();
     return (
         <>
-            <div className="min-h-screen flex flex-col items-center justify-center lg:flex-row">
-                <h1 className="pt-12 md:text-8xl text-6xl font-[Josefin_sans] text-amber-50 md:w-3xl w-96">HANNA ADENHOLM</h1>
-                <img src={image} alt="dog" className="lg:w-2xl w-3/4"/>
+            <ScrollingBg/>
+            <div className="min-h-screen flex flex-col items-center justify-center lg:flex-row lg:px-48">
+                <div className= "xl:w-3xl lg:w-100 w-96">
+                    <h1 className="xl:text-8xl lg:text-7xl md:text-8xl text-6xl font-[Josefin_sans] text-amber-50 xl:w-3xl w-96">HANNA ADENHOLM</h1>
+                    <h2 className="xl:text-4xl lg:text-3xl md:text-4xl text-2xl font-[Josefin_sans] text-amber-100 mt-4 md:w-3xl w-96">Software Developer & Designer</h2>
+                </div>
+
+                <img src={image} alt="dog" className="xl:w-2xl lg:w-xl w-3/4 animate-float"/>
             </div>
-            <div className="flex w-fill justify-center bg-amber-50 p-24 flex-col gap-8">
-                <h1 className="text-5xl font-[Josefin_sans] text-amber-900">Who am I?</h1>
-                
-                
-                <div className='flex flex-col lg:flex-row gap-8'>
-                    <div className='flex flex-col gap-4 mb-8'>
-                    <p>
-                A passionate fullstack developer and software engineer with an interest for UX and user-friendly design!
-                </p>
-                <img src={me} alt="" className="w-72 rounded-full"/>
-                        <h2 className="text-4xl font-[Josefin_sans] text-amber-900">Education </h2>
-                        <Experiences experience={{ 
-                            title: "Master of Science in Engineering, MSE", 
-                            date: "sep 2020 - jun 2025", 
-                            company: "Chalmers University of Technology",
-                            descriptions: [] 
-                                }} />
-                        <Experiences experience={{ 
-                            title: "Interaction design, MSc", 
-                            date: "sep 2023 – jun 2025", 
-                            company: "Chalmers University of Technology",
-                            descriptions: [] 
-                                }} />
-                        <Experiences experience={{ 
-                            title: "Software Engineering, BSc", 
-                            date: "sep 2020 – jun 2023", 
-                            company: "Chalmers University of Technology",
-                            descriptions: [] 
-                                }} />   
-                    </div>
-                    
-                    <div className='flex flex-col gap-4'>
-                        <h2 className="text-4xl font-[Josefin_sans] text-amber-900">Employment History</h2>
-                        <Experiences experience={{ 
-                            title: "Summer worker - framework development for testing", 
-                            date: "jun 2023 – jul 2023", 
-                            company: "Volvo Group",
-                            descriptions: [
-                                "Collaborated in a multicultural team to develop a testing framework in python",
-                                "Worked using the agile framework with daily scrum meetings"
-                            ] 
-                                }} />
-                        <Experiences experience={{
-                            title: "Teacher assistant - Basic computer technology", 
-                            date: "aug 2021 – dec 2021", 
-                            company: "Chalmers University",
-                            descriptions: [
-                                "Motivated and coached students through their problem-solving process",
-                                "Provided support to the teacher",
-                                "Collaborated with other teaching assistants"
-                            ] 
-                                }} />
-                        <Experiences experience={{
-                            title: "Park maintenance - summer substitute", 
-                            date: "2018 – 2020", 
-                            company: "Ronneby Municipality",
-                            descriptions: [
-                                "Worked in a team to maintain the municipalities greenery",
-                                "Answered questions from passing tourists"
-                            ] 
-                                }} />
-                    </div>
-                    
-                    <div className='flex flex-col gap-4'>
-                        <h2 className="text-4xl font-[Josefin_sans] text-amber-900">Extra-curricular activities</h2>
-                        <Experiences experience={{
-                            title: "Cloudlords, manager of student division premises - PR", 
-                            date: "oct 2023 – sep 2024", 
-                            company: "Chalmers",
-                            descriptions: [
-                                "Responsible for creating our visual identity, logo and posters for events",
-                                "Improved and managed the IT divisions premises on Lindholmen"
-                            ] 
-                                }} />
-                        <Experiences experience={{
-                            title: "IT Student Division Board – Secretary", 
-                            date: "jul 2022 – jun 2023", 
-                            company: "Chalmers",
-                            descriptions: [
-                                "Collaborating in a team of seven to handle issues and conflicts having arised",
-                                "Responsible for writing protocols during meetings with over 100 attendees",
-                                "Organizing and updating the student divisions documents"
-                            ] 
-                                }} />
-                        <Experiences experience={{
-                            title: "Board member of Board gaming club DrawIT", 
-                            date: "mar 2022 – mar 2023", 
-                            company: "Chalmers",
-                            descriptions: [
-                                "Responsible for maintaining and buying new games",
-                                "Organized weekly board game nights"
-                            ] 
-                                }} />
+            <div className="flex w-fill justify-center bg-amber-50 p-24 flex-col gap-8 items-center">
+                <div className='max-w-7xl justify-center'>
+                    <h1 className="text-5xl font-[Josefin_sans] text-amber-900 mb-4">My work</h1>
+                    <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8'>
+                        <ProjectCard 
+                            title="Flower"
+                            description="A unique screen use visualization app"
+                            technologies="Kotlin | Jetpack Compose | SQLite"
+                            image={flowerimg}
+                            onClick={() => navigate('/projects/flower')}
+                        />
+                        <ProjectCard 
+                            title="Recipes"
+                            description="Recipe sharing web application with user authentication and CRUD functionality."
+                            technologies="React | .NET | PostgreSQL"
+                            image={recipeimg}
+                            onClick={() => navigate('/projects/recipes')}
+                        />
+                        <ProjectCard 
+                            title="Rent a Toy"
+                            description="A mobile app prototype made in Figma. Focus on user-friendly design and UX principles."
+                            technologies="Figma | UX Design"
+                            image={mobileimg}
+                            onClick={() => navigate('/projects/rent-a-toy')}
+                        />
+                        <ProjectCard 
+                            title="Quack Tales"
+                            description="A cooperative multiplayer game made in Unity."
+                            technologies="Unity | C# | Procreate"
+                            image={quacktalesimg}
+                            onClick={() => navigate('/projects/quack-tales')}
+                        />
+                        <ProjectCard 
+                            title="Cohort Manager"
+                            description="A mobile app prototype made in Figma. Focus on user-friendly design and UX principles."
+                            technologies="Java | Spring Boot | React"
+                            image={mobileimg}
+                            onClick={() => navigate('/projects/cohort-manager')}
+                        />
+                        <ProjectCard 
+                            title="Nestify"
+                            description="A bird and insect hotel blueprint sharing app."
+                            technologies="Flutter | Firebase | Dart"
+                            image={recipeimg}
+                            onClick={() => navigate('/projects/nestify')}
+                        />
+                        <ProjectCard 
+                            title="Hive for mobile"
+                            description="A mobile adaption of the board game hive."
+                            technologies="Java | JavaFX | OOP"
+                            image={recipeimg}
+                            onClick={() => navigate('/projects/hive-for-mobile')}
+                        />
                     </div>
                 </div>
             </div>
             <div className="flex flex-col items-center justify-center bg- p-24">
-
             </div>
         </>
     );
