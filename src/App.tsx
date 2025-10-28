@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Home from './pages/home/Home'
 import './styles/scrolling.css'
 import ScrollingBg from './components/ScrollingBg'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
       <ScrollingBg/>
       <Home/>
+      <Footer/>
     </>
   )
 }

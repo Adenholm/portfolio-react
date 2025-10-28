@@ -14,13 +14,6 @@ const Home: React.FC = () => {
                 <h1 className="pt-12 xl:text-8xl lg:text-7xl md:text-8xl text-6xl font-[Josefin_sans] text-amber-50 md:w-3xl w-96">HANNA ADENHOLM</h1>
                 <img src={image} alt="dog" className="xl:w-2xl lg:w-xl w-3/4 animate-float"/>
             </div>
-            <div className="flex w-fill justify-center bg-amber-50 p-24 flex-col gap-8">
-                <h1 className="text-5xl font-[Josefin_sans] text-amber-900">Who am I?</h1>
-
-            </div>
-            <div className="flex flex-col items-center justify-center bg- p-24">
-
-            </div>
             <div className="flex w-fill justify-center bg-amber-50 p-24 flex-col gap-8 items-center">
                 <div className='max-w-7xl justify-center'>
                     <h1 className="text-5xl font-[Josefin_sans] text-amber-900">My work</h1>
@@ -54,6 +47,18 @@ const Home: React.FC = () => {
                             description="A mobile app prototype made in Figma. Focus on user-friendly design and UX principles."
                             technologies="Java | Spring Boot | React"
                             image={mobileimg}
+                        />
+                        <ProjectCard 
+                            title="Nestify"
+                            description="A bird and insect hotel blueprint sharing app."
+                            technologies="Flutter | Firebase | Dart"
+                            image={recipeimg}
+                        />
+                        <ProjectCard 
+                            title="Hive for mobile"
+                            description="A mobile adaption of the board game hive."
+                            technologies="Java | JavaFX | OOP"
+                            image={recipeimg}
                         />
                     </div>
                 </div>
