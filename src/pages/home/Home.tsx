@@ -11,12 +11,16 @@ const Home: React.FC = () => {
     return (
         <>
             <div className="min-h-screen flex flex-col items-center justify-center lg:flex-row lg:px-48">
-                <h1 className="pt-12 xl:text-8xl lg:text-7xl md:text-8xl text-6xl font-[Josefin_sans] text-amber-50 md:w-3xl w-96">HANNA ADENHOLM</h1>
+                <div className= "xl:w-3xl lg:w-100 w-96">
+                    <h1 className="xl:text-8xl lg:text-7xl md:text-8xl text-6xl font-[Josefin_sans] text-amber-50 xl:w-3xl w-96">HANNA ADENHOLM</h1>
+                    <h2 className="xl:text-4xl lg:text-3xl md:text-4xl text-2xl font-[Josefin_sans] text-amber-100 mt-4 md:w-3xl w-96">Software Developer & Designer</h2>
+                </div>
+
                 <img src={image} alt="dog" className="xl:w-2xl lg:w-xl w-3/4 animate-float"/>
             </div>
             <div className="flex w-fill justify-center bg-amber-50 p-24 flex-col gap-8 items-center">
                 <div className='max-w-7xl justify-center'>
-                    <h1 className="text-5xl font-[Josefin_sans] text-amber-900">My work</h1>
+                    <h1 className="text-5xl font-[Josefin_sans] text-amber-900 mb-4">My work</h1>
                     <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8'>
                         <ProjectCard 
                             title="Flower"

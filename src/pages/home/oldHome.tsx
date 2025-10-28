@@ -1,7 +1,7 @@
 import React from 'react';
 import image from '../../assets/images/dog.png';
 import me from '../../assets/images/me.jpg';
-import Experiences from './Experiences';
+import Experiences from '../../components/Experiences';
 import '../../styles/float.css';
 
 

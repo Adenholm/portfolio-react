@@ -1,9 +1,9 @@
 import './App.css'
-import Navbar from './components/Navbar'
+import Navbar from './layout/Navbar'
 import Home from './pages/home/Home'
 import './styles/scrolling.css'
 import ScrollingBg from './components/ScrollingBg'
-import Footer from './components/Footer'
+import Footer from './layout/Footer'
 
 function App() {
 
