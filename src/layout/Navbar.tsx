@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const navigate = useNavigate();
 
     return (
         <nav className="bg-transparent p-4 w-screen sticky top-0 z-50">
-            <div className="container mx-auto flex justify-between items-center">
-                <div className="text-white text-lg font-bold">MyPortfolio</div>
+            <div className="container mx-auto max-w-5xl flex justify-between items-center">
+                <div className="text-white text-lg font-bold" onClick={() => navigate('/')}>Hanna Adenholm</div>
                 <div className="block lg:hidden bg-transparent">
                     <button
                         onClick={() => setIsOpen(!isOpen)}

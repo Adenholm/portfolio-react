@@ -1,28 +1,47 @@
 import backgroundimg from '../../assets/images/background.png';
+import mockup from '../../assets/images/flower/mockup.png';
+import ProjectDetails from '../../components/ProjectDetails';
 
 const FlowerPage: React.FC = () => {
+    const imageModules = import.meta.glob("/src/assets/images/flower/flower*.{png,jpg,jpeg,webp}", { eager: true });
+
+    interface ImageModule {
+    default: string;
+    }
+  const flowerImages = Object.entries(imageModules)
+    .map(([path, mod]) => ({
+      path,
+      src: (mod as ImageModule).default,
+    }))
+    .sort((a, b) => {
+      const numA = parseInt(a.path.match(/flower(\d+)\.\w+$/)?.[1] || "0");
+      const numB = parseInt(b.path.match(/flower(\d+)\.\w+$/)?.[1] || "0");
+      return numA - numB;
+    });
+
+    const details = {
+        title: "Flower",
+        subtitle: "A Visualization Tool for Reflecting on Smartphone Use",
+        description: "This project was one of the most fun ones I’ve done. It was done as part of my master thesis and focuses on the concept of gaining insight into ones screen use. Instead of shaming the user for the amount of time they spend in front of their screen we wanted to raise awareness and motivate the user to form healthier habits.",
+        categories: ["Android app development", "Interaction design"],
+        team: ["Hanna Adenholm", "Stina Hansson"],
+        year: "2025",
+        technologies: ["Kotlin", "SQLite", "Jetpack Compose"],
+        img: mockup
+    }
+
     return (
         <>
-            <img src={backgroundimg} alt="Background" className="fixed inset-0 object-cover object-left w-full h-full -z-10" />
-            <div className="min-h-screen flex flex-col items-center justify-center px-8 py-16">
-                <h1 className="text-5xl font-[Josefin_sans] text-amber-900 mb-8">Flower</h1>
-                <div className="max-w-4xl bg-amber-50 bg-opacity-90 p-8 rounded-lg shadow-lg">
-                    <p className="text-lg text-amber-900 mb-4">
-                        Flower is a unique screen use visualization app developed in Kotlin using Jetpack Compose for Android devices. The app tracks and visualizes users' screen time, providing insights into their usage patterns.
-                    </p>
-                    <p className="text-lg text-amber-900 mb-4">
-                        Key features of Flower include:
-                    </p>
-                    <ul className="list-disc list-inside text-lg text-amber-900 mb-4">
-                        <li>Real-time tracking of screen time and app usage.</li>
-                        <li>Visual representations of data through charts and graphs.</li>
-                        <li>Customizable notifications to help users manage their screen time.</li>
-                        <li>Data storage using SQLite for offline access and analysis.</li>
-                    </ul>
-                    <p className="text-lg text-amber-900">
-                        Flower aims to promote healthier digital habits by providing users with the tools they need to understand and manage their screen time effectively.
-                    </p>
-                </div>
+            <img src={backgroundimg} alt="Background" className="fixed inset-0 object-cover object-left w-full h-full -z-10 blur scale-105" />
+            <ProjectDetails {...details} />
+            <div className="flex flex-col gap-8 max-w-5xl mx-auto py-24">
+                 {flowerImages.map((img, index) => (
+                    <img key={index} src={img.src} alt={`Flower ${index + 1}`} />
+                ))}
+            </div>
+            <div className="flex w-fill justify-between max-w-5xl mx-auto pb-12 px-4">
+                <a href="/projects/rent-a-toy" className='text-white text-lg'>Previous project: Rent a Toy</a>
+                <a href="/projects/cohort-manager" className='text-white text-lg'>Next project: Cohort Manager</a>
             </div>
         </>
     )

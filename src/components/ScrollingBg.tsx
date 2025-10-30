@@ -29,8 +29,8 @@ const ScrollingBg = () => {
               animation: `scroll ${bg.speed}s linear infinite`,
             }}
           >
-            <img src={bg.src} alt={`background-${index}`} className="h-screen w-auto block" />
-            <img src={bg.src} alt={`background-${index}`} className="h-screen w-auto block" />
+            <img src={bg.src} alt={`background-${index}`} className="h-screen lg:w-auto md:blur-none md:scale-100 blur-sm scale-105 block" />
+            <img src={bg.src} alt={`background-${index}`} className="h-screen lg:w-auto md:blur-none md:scale-100 blur-sm scale-105 block" />
           </div>
         </div>
       ))}

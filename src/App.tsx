@@ -5,6 +5,8 @@ import './styles/scrolling.css'
 import Footer from './layout/Footer'
 import { Route, Routes } from 'react-router-dom'
 import FlowerPage from './pages/projects/FlowerPage'
+import RecipesPage from './pages/projects/RecipesPage'
+import QuackTalesPage from './pages/projects/QuackTalesPage'
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/projects/flower" element={<FlowerPage />} />
+        <Route path="/projects/recipes" element={<RecipesPage />} />
+        <Route path="/projects/quack-tales" element={<QuackTalesPage />} />
         <Route path="/*" element={<Home />} />
       </Routes>
       <Footer/>

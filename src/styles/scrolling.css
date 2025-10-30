@@ -9,11 +9,6 @@
     animation: scroll 60s linear infinite;
 }
 
-.scroll-content img {
-    filter: blur(0px);
-}
-
-
 
 @keyframes scroll {
     0% {
