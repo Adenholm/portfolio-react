@@ -8,5 +8,5 @@ export default defineConfig({
     server: { 
         port: 3000 
     },
-    base: '/portfolio-react/', // Used for deploying to GitHub Pages
+
 })
