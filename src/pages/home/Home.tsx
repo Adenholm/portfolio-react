@@ -7,6 +7,7 @@ import recipeimg from '../../assets/images/recipe.png';
 import mobileimg from '../../assets/images/mobile.png';
 import quacktalesimg from '../../assets/images/quacktales.gif';
 import ScrollingBg from '../../components/ScrollingBg';
+import cohortimg from '../../assets/images/cohort.png';
 import { useNavigate } from 'react-router-dom';
 
 const Home: React.FC = () => {
@@ -56,9 +57,9 @@ const Home: React.FC = () => {
                         />
                         <ProjectCard 
                             title="Cohort Manager"
-                            description="A mobile app prototype made in Figma. Focus on user-friendly design and UX principles."
+                            description="A web application for managing student cohorts and courses."
                             technologies="Java | Spring Boot | React"
-                            image={mobileimg}
+                            image={cohortimg}
                             onClick={() => navigate('/projects/cohort-manager')}
                         />
                         <ProjectCard 
