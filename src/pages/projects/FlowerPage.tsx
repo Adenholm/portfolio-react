@@ -27,7 +27,8 @@ const FlowerPage: React.FC = () => {
         team: ["Hanna Adenholm", "Stina Hansson"],
         year: "2025",
         technologies: ["Kotlin", "SQLite", "Jetpack Compose"],
-        img: mockup
+        img: mockup,
+        website: "https://odr.chalmers.se/items/acf129a7-45cf-455a-bbd3-196afd1cc19f"
     }
 
     return (
