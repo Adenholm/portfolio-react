@@ -23,7 +23,7 @@ const Home: React.FC = () => {
 
                 <img src={image} alt="dog" className="xl:w-2xl lg:w-xl w-3/4 animate-float"/>
             </div>
-            <div className="flex w-fill justify-center bg-amber-50 md:p-24 px-8 flex-col gap-8 items-center">
+            <div className="flex w-fill justify-center bg-amber-50 md:p-24 p-8 flex-col gap-8 items-center">
                 <div className='max-w-7xl justify-center'>
                     <h1 className="text-5xl font-[Josefin_sans] text-amber-900 mb-4">My work</h1>
                     <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8'>

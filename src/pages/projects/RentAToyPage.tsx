@@ -28,7 +28,7 @@ const RentAToyPage: React.FC = () => {
         year: "2024",
         technologies: ["Figma", "UX Design"],
         img: rentimg,
-        website: "https://www.figma.com/design/lzK6fGVm5oPv1O794tsINy/Home-exam-Moblie?node-id=0-1&t=q6gRwRsWEqXCMR6a-1"
+        figma: "https://www.figma.com/design/lzK6fGVm5oPv1O794tsINy/Home-exam-Moblie?node-id=0-1&t=q6gRwRsWEqXCMR6a-1"
     }
 
     return (

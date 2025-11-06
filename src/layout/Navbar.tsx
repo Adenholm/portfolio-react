@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className="bg-transparent p-4 w-screen sticky top-0 z-50">
-            <div className="container mx-auto max-w-5xl flex justify-between items-center">
+            <div className="container mx-auto max-w-6xl flex justify-between items-center">
                 <div className="text-white text-lg font-bold" onClick={() => navigate('/')}>Hanna Adenholm</div>
                 <div className="block lg:hidden bg-transparent">
                     <button
