@@ -1,6 +1,7 @@
 import ProjectDetails from "../../components/ProjectDetails";
 import backgroundimg from '../../assets/images/background.png';
 import cohortimg from '../../assets/images/cohort.png';
+import ProjectLink from "../../components/ProjectLink";
 
 const CohortPage: React.FC = () => {
     const details = {
@@ -20,9 +21,9 @@ const CohortPage: React.FC = () => {
             <ProjectDetails {...details} />
             <div className="h-32"></div>
 
-            <div className="flex w-fill justify-between max-w-5xl mx-auto pb-12 px-4">
-                <a href="/projects/quack-tales" className='text-white text-lg'>Previous project: Quack Tales</a>
-                <a href="/projects/rent-a-toy" className='text-white text-lg'>Next project: Rent a Toy</a>
+            <div className="flex w-fill justify-between max-w-6xl mx-auto pb-12 px-4">
+                <ProjectLink link="/projects/rent-a-toy" name="Rent a Toy" next={false} />
+                <ProjectLink link="/projects/flower" name="Flower" next={true} />
             </div>
         </div>
     );

@@ -21,7 +21,7 @@ interface ProjectDetailsProps {
 
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({ title, subtitle, description, categories, team, year, technologies, img, github, website, figma }) => {
     return (
-        <div className="mt-12 w-fill justify-center bg-amber-50 ">
+        <div className="mt-12 w-full justify-center bg-amber-50 ">
             <div className="max-w-6xl gap-8 items-center flex flex-col lg:flex-row mx-auto lg:py-0 py-12">
                 <div className='lg:py-12 px-4 lg:px-0'>
                     <h1 className="text-7xl font-[Josefin_sans] mb-2">{title}</h1>

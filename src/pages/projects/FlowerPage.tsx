@@ -1,6 +1,7 @@
 import backgroundimg from '../../assets/images/background.png';
 import mockup from '../../assets/images/flower/mockup.png';
 import ProjectDetails from '../../components/ProjectDetails';
+import ProjectLink from '../../components/ProjectLink';
 
 const FlowerPage: React.FC = () => {
     const imageModules = import.meta.glob("/src/assets/images/flower/flower*.{png,jpg,jpeg,webp}", { eager: true });
@@ -40,9 +41,9 @@ const FlowerPage: React.FC = () => {
                     <img key={index} src={img.src} alt={`Flower ${index + 1}`} />
                 ))}
             </div>
-            <div className="flex w-fill justify-between max-w-5xl mx-auto pb-12 px-4">
-                <a href="/projects/rent-a-toy" className='text-white text-lg'>Previous project: Rent a Toy</a>
-                <a href="/projects/cohort-manager" className='text-white text-lg'>Next project: Cohort Manager</a>
+            <div className="flex w-fill justify-between max-w-6xl mx-auto pb-12 px-4">
+                <ProjectLink link ="/projects/cohort-manager" name="Cohort Manager" next={false} />
+                <ProjectLink link="/projects/recipes" name="Recipes" next={true} />
             </div>
         </>
     )

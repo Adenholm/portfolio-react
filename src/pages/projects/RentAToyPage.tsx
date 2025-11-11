@@ -1,6 +1,7 @@
 import ProjectDetails from "../../components/ProjectDetails";
 import rentimg from '../../assets/images/mobile.png';
 import backgroundimg from '../../assets/images/background.png';
+import ProjectLink from "../../components/ProjectLink";
 
 const RentAToyPage: React.FC = () => {
     const imageModules = import.meta.glob("/src/assets/images/rent/rent-a-toy*.{png,jpg,jpeg,webp}", { eager: true });
@@ -41,9 +42,9 @@ const RentAToyPage: React.FC = () => {
                 ))}
             </div>
 
-            <div className="flex w-fill justify-between max-w-5xl mx-auto pb-12 px-4">
-                <a href="/projects/flower" className='text-white text-lg'>Previous project: Flower</a>
-                <a href="/projects/recipes" className='text-white text-lg'>Next project: Recipes</a>
+            <div className="flex w-fill justify-between max-w-6xl mx-auto pb-12 px-4">
+                <ProjectLink link ="/projects/quack-tales" name="Quack Tales" next={false} />
+                <ProjectLink link="/projects/cohort-manager" name="Cohort Manager" next={true} />
             </div>
         </div>
     );

@@ -1,0 +1,15 @@
+
+.spin-arrow {
+    transform: rotateX(0deg);
+    transform-style: preserve-3d;
+    animation: spin-3d 4s infinite linear;
+}
+
+@keyframes spin-3d {
+    0% {
+        transform: rotateX(0deg);
+    }
+    100% {
+        transform: rotateX(360deg);
+    }
+}

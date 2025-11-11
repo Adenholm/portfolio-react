@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import LeavesUnderline from '../assets/icons/leaves';
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -36,25 +37,29 @@ const Navbar: React.FC = () => {
                     } w-full lg:flex lg:items-center lg:w-auto`}
                 >
                     <ul className="lg:flex lg:space-x-4">
-                        <li>
-                            <a href="#" className="block text-white py-2 px-4">
+                        <li className="group relative w-max py-2 px-4">
+                            <a href="/" className="block text-white">
                                 Home
                             </a>
+                            <LeavesUnderline size={48} color="#fff" className="absolute -bottom-2 left-0 right-0 mx-auto"/>
                         </li>
-                        <li>
-                            <a href="#" className="block text-white py-2 px-4">
+                        <li className="group relative w-max py-2 px-4">
+                            <a href="/about" className="block text-white">
                                 About
                             </a>
+                            <LeavesUnderline size={48} color="#fff" className="absolute -bottom-2 left-0 right-0 mx-auto"/>
                         </li>
-                        <li>
-                            <a href="#" className="block text-white py-2 px-4">
+                        <li className="group relative w-max py-2 px-4">
+                            <a href="/projects" className="block text-white">
                                 Projects
                             </a>
+                            <LeavesUnderline size={48} color="#fff" className="absolute -bottom-2 left-0 right-0 mx-auto"/>
                         </li>
-                        <li>
-                            <a href="#" className="block text-white py-2 px-4">
+                        <li className="group relative w-max py-2 px-4">
+                            <a href="/contact" className="block text-white">
                                 Contact
                             </a>
+                            <LeavesUnderline size={48} color="#fff" className="absolute -bottom-2 left-0 right-0 mx-auto"/>
                         </li>
                     </ul>
                 </div>

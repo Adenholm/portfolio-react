@@ -1,6 +1,7 @@
 import recipeimg from '../../assets/images/recipe.png';
 import backgroundimg from '../../assets/images/background.png';
 import ProjectDetails from '../../components/ProjectDetails';
+import ProjectLink from '../../components/ProjectLink';
 
 const RecipesPage: React.FC = () => {
     const details = {
@@ -21,9 +22,10 @@ const RecipesPage: React.FC = () => {
             <img src={backgroundimg} alt="Background" className="fixed inset-0 object-cover object-left w-full h-full -z-10 blur scale-105" />
             <ProjectDetails {...details} />
             <div className="h-32"></div>
-            <div className="flex w-fill justify-between max-w-5xl mx-auto pb-12">
-                <a href="/projects/rent-a-toy" className='text-white text-lg'>Previous project: Rent a Toy</a>
-                <a href="/projects/cohort-manager" className='text-white text-lg'>Next project: Cohort Manager</a>
+            
+            <div className="flex w-fill justify-between max-w-6xl mx-auto pb-12">
+                <ProjectLink link="/projects/flower" name="Flower" next={false} />
+                <ProjectLink link="/projects/rent-a-toy" name="Rent a Toy" next={true} />
             </div>
         </div>
     );

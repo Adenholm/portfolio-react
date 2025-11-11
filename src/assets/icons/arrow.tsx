@@ -1,6 +1,6 @@
-const ArrowIcon: React.FC<{ size?: number; color?: string }> = ({ size = 24, color = "#353535" }) => {
+const ArrowIcon: React.FC<{ size?: number; color?: string, className?: string }> = ({ size = 24, color = "#353535", className }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" height={`${size}px`} viewBox="0 -960 960 960" width={`${size}px`} fill={color}>
+    <svg xmlns="http://www.w3.org/2000/svg" height={`${size}px`} viewBox="0 -960 960 960" width={`${size}px`} fill={color} className={className}>
       <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
     </svg>
   );
