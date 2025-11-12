@@ -5,8 +5,8 @@ const Footer = () => {
             <div className="flex items-center justify-between w-full max-w-6xl md:flex-row flex-col gap-8">
                 <div className="flex flex-col gap-2">
                     <h2 className="text-2xl font-[Josefin_sans] mt-2">CONTACT ME</h2>
-                    <div className="text-sm flex items-center gap-2 w-fit mx-2"><EmailIcon /> <a href="mailto:hanna@adenholm.com" className="hover:underline">hanna@adenholm.com</a></div>
-                    <div className="text-sm flex items-center gap-2 w-fit mx-2"><PhoneIcon /> Phone: <a href="tel:+1234567890" className="hover:underline">+1 (234) 567-890</a></div>
+                    <div className="text-sm flex items-center gap-2 w-fit mx-2"><EmailIcon /> <a href="mailto:hanna@adenholm.se" className="hover:underline">hanna@adenholm.se</a></div>
+                    <div className="text-sm flex items-center gap-2 w-fit mx-2"><PhoneIcon /> <a href="tel:+46701234567" className="hover:underline">+46 70 123 45 67</a></div>
                 </div>
                 <div className="flex space-x-4">
                     <a href="https://www.linkedin.com/in/adenholm/" target="_blank" rel="noopener noreferrer" ><LinkedInIcon /></a>

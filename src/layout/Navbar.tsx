@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import LeavesUnderline from '../assets/icons/leaves';
+import { Link, useNavigate } from 'react-router-dom';
+import {LeavesUnderline} from '../assets/icons/leaves';
+import LeafUnderline from '../assets/icons/leaf';
+
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +11,10 @@ const Navbar: React.FC = () => {
     return (
         <nav className="bg-transparent p-4 w-screen sticky top-0 z-50">
             <div className="container mx-auto max-w-6xl flex justify-between items-center">
-                <div className="text-white text-lg font-bold" onClick={() => navigate('/')}>Hanna Adenholm</div>
+                <div className='group relative w-max'>
+                    <div className="text-white text-xl font-[Josefin_sans] cursor-pointer" onClick={() => navigate('/')}>Hanna Adenholm</div>
+                    <LeafUnderline size={160} color="#fff" className="absolute -bottom-4 left-0 right-0 mx-auto"/>
+                </div>
                 <div className="block lg:hidden bg-transparent">
                     <button
                         onClick={() => setIsOpen(!isOpen)}
@@ -38,27 +43,27 @@ const Navbar: React.FC = () => {
                 >
                     <ul className="lg:flex lg:space-x-4">
                         <li className="group relative w-max py-2 px-4">
-                            <a href="/" className="block text-white">
+                            <Link to="/" className="block text-white">
                                 Home
-                            </a>
+                            </Link>
                             <LeavesUnderline size={48} color="#fff" className="absolute -bottom-2 left-0 right-0 mx-auto"/>
                         </li>
                         <li className="group relative w-max py-2 px-4">
-                            <a href="/about" className="block text-white">
+                            <Link to="/about" className="block text-white">
                                 About
-                            </a>
+                            </Link>
                             <LeavesUnderline size={48} color="#fff" className="absolute -bottom-2 left-0 right-0 mx-auto"/>
                         </li>
                         <li className="group relative w-max py-2 px-4">
-                            <a href="/projects" className="block text-white">
+                            <Link to="/projects" className="block text-white">
                                 Projects
-                            </a>
+                            </Link>
                             <LeavesUnderline size={48} color="#fff" className="absolute -bottom-2 left-0 right-0 mx-auto"/>
                         </li>
                         <li className="group relative w-max py-2 px-4">
-                            <a href="/contact" className="block text-white">
+                            <Link to="/contact" className="block text-white">
                                 Contact
-                            </a>
+                            </Link>
                             <LeavesUnderline size={48} color="#fff" className="absolute -bottom-2 left-0 right-0 mx-auto"/>
                         </li>
                     </ul>

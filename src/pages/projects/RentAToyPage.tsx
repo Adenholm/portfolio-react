@@ -43,8 +43,8 @@ const RentAToyPage: React.FC = () => {
             </div>
 
             <div className="flex w-fill justify-between max-w-6xl mx-auto pb-12 px-4">
-                <ProjectLink link ="/projects/quack-tales" name="Quack Tales" next={false} />
-                <ProjectLink link="/projects/cohort-manager" name="Cohort Manager" next={true} />
+                <ProjectLink link ="/projects/recipes" name="Recipes" next={false} />
+                <ProjectLink link="/projects/quack-tales" name="Quack Tales" next={true} />
             </div>
         </div>
     );
