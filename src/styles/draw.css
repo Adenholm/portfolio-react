@@ -4,14 +4,21 @@
     transition: stroke-dashoffset 2s;
 }
 
+.path-fast {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    transition: stroke-dashoffset 0.5s;
+}
 
-.group:hover .path {
+.group:hover .path, .group:hover .path-fast {
     stroke-dashoffset: 0;
 
 }
+
 
 @keyframes dash {
   to {
     stroke-dashoffset: 0;
   }
 }
+

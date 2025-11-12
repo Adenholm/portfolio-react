@@ -15,15 +15,17 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Routes>
-        <Route path="/projects/flower" element={<FlowerPage />} />
-        <Route path="/projects/recipes" element={<RecipesPage />} />
-        <Route path="/projects/quack-tales" element={<QuackTalesPage />} />
-        <Route path="/projects/rent-a-toy" element={<RentAToyPage />} />
-        <Route path="/projects/cohort-manager" element={<CohortPage />} />
-        <Route path="/*" element={<Home />} />
-      </Routes>
-      <Footer/>
+      <div className="overflow-scroll fixed h-[calc(100vh-2.5rem)] w-full z-[1]">
+        <Routes>
+          <Route path="/projects/flower" element={<FlowerPage />} />
+          <Route path="/projects/recipes" element={<RecipesPage />} />
+          <Route path="/projects/quack-tales" element={<QuackTalesPage />} />
+          <Route path="/projects/rent-a-toy" element={<RentAToyPage />} />
+          <Route path="/projects/cohort-manager" element={<CohortPage />} />
+          <Route path="/*" element={<Home />} />
+        </Routes>
+        <Footer/>
+      </div>
     </>
   )
 }

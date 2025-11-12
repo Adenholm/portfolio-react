@@ -15,6 +15,7 @@ import { useEffect } from "react";
 import CodeIcon from '../../assets/icons/code';
 import DesktopIcon from '../../assets/icons/desktop';
 import DesignIcon from '../../assets/icons/design';
+import AnimatedPath from '../../components/AnimatedPath';
 
 const Home: React.FC = () => {
     const navigate = useNavigate();
@@ -56,7 +57,15 @@ const Home: React.FC = () => {
             <div className="min-h-screen flex flex-col items-center justify-center lg:flex-row lg:px-48">
                 <div className= "xl:w-3xl lg:w-100 w-96">
                     <h1 className="xl:text-8xl lg:text-7xl text-6xl font-[Josefin_sans] text-amber-50 xl:w-3xl w-96">HANNA ADENHOLM</h1>
-                    <h2 className="xl:text-4xl lg:text-2xl text-xl font-[Josefin_sans] text-amber-50 mt-4 md:w-3xl w-96">SOFTWARE ENGINEER & INTERACTION DESIGNER</h2>
+                    <h2 className="xl:text-4xl lg:text-2xl text-xl font-[Josefin_sans] text-amber-50 mt-4 md:w-3xl w-96 content">
+                        <ol>
+                            <li><span>Software engineer</span></li>
+                            <li><span>Interaction designer</span></li>
+                            <li><span>Illustrator</span></li>
+                            <li><span>Fullstack developer</span></li>
+                            <li><span>UX Designer</span></li>
+                        </ol>
+                    </h2>
                 </div>
 
                 <img src={image} alt="dog" className="xl:w-2xl lg:w-xl w-3/4 animate-float"/>
@@ -67,6 +76,7 @@ const Home: React.FC = () => {
                 initial="hidden"
                 animate={controls}>
                 <h1 className="text-5xl font-[IBM_Plex_Serif] italic text-amber-50 px-50 py-4  mb-4 bg-linear-to-r  via-[#A7956C] from-10% via-50% to-90%">My Expertise</h1>
+                <AnimatedPath color="#fff" size={180} className="mt-[-78px] ml-50 rotate-[-4deg]"/>
                 {/*<p className='max-w-4xl text-center '>
                 I'm Hanna, a passionate fullstack developer and software engineer with a keen interest in UX and user-friendly design. Welcome to my portfolio where I showcase my projects, skills, and experiences. Feel free to explore and reach out if you'd like to connect!
                 </p>*/}
@@ -89,8 +99,11 @@ const Home: React.FC = () => {
                 </div>
             </motion.div>
             <div className="flex w-fill justify-center bg-amber-50 md:p-24 p-8 flex-col gap-8 items-center">
-                <div className='max-w-7xl justify-center'>
-                    <h1 className="text-5xl font-[Josefin_sans] text-amber-900 mb-4">Featured work</h1>
+                <div className='max-w-7xl justify-center items-center flex flex-col'>
+                    <div className='bg-[#A7956C] inline-block rounded-md mb-12 group py-4'>
+                        <h1 className="text-5xl font-[Josefin_sans] text-amber-50 px-8 rounded">Featured work</h1>
+                        <AnimatedPath color="#fff" size={180} className='rotate-6'/>
+                    </div>
                     <div className='grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8'>
                         {projects.map((project) => (
                             <ProjectCard 
