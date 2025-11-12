@@ -84,7 +84,7 @@ const Home: React.FC = () => {
                     <motion.div className='flex flex-col gap-4 bg-amber-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300' variants={itemVariants} key={1}> 
                         <CodeIcon size={54} color="#5f504eff" className='bg-[#e1d3abff] rounded-full p-2'/> 
                         <h3 className="text-2xl font-[Josefin_sans]">Software Engineering</h3>
-                        <p className='text-gray-600'>Experienced in both OOP and functional. Proficient in Java, Spring Boot, Python, .NET and SQL.</p>
+                        <p className='text-gray-600'>Experienced in both OOP and functional. Proficient in Java, Spring Boot, Python, .NET, SQL and Azure.</p>
                     </motion.div>
                     <motion.div className='flex flex-col gap-4 bg-amber-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300' variants={itemVariants} key={2}>  
                         <DesktopIcon size={54} color="#5f504eff" className='bg-[#e1d3abff] rounded-full p-2'/>
