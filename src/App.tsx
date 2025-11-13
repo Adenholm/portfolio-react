@@ -10,6 +10,7 @@ import QuackTalesPage from './pages/projects/QuackTalesPage'
 import RentAToyPage from './pages/projects/RentAToyPage'
 import CohortPage from './pages/projects/CohortPage'
 import { useEffect } from 'react'
+import WolfsBanePage from './pages/projects/WolfsBanePage'
 
 function App() {
   const { pathname } = useLocation();
@@ -29,6 +30,7 @@ function App() {
             <Route path="/projects/quack-tales" element={<QuackTalesPage />} />
             <Route path="/projects/rent-a-toy" element={<RentAToyPage />} />
             <Route path="/projects/cohort-manager" element={<CohortPage />} />
+            <Route path="/projects/wolfsbane" element={<WolfsBanePage />} />
             <Route path="/*" element={<Home />} />
           </Routes>
         </main>

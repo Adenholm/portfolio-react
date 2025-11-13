@@ -8,6 +8,7 @@ import mobileimg from '../../assets/images/mobile.png';
 import quacktalesimg from '../../assets/images/quacktales.gif';
 import ScrollingBg from '../../components/ScrollingBg';
 import cohortimg from '../../assets/images/cohort.png';
+import wolfimg from '../../assets/images/wolfsbane/wolfsbane-cover.jpg';
 import { useNavigate } from 'react-router-dom';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -49,6 +50,7 @@ const Home: React.FC = () => {
         { title: "Rent a Toy", description: "A mobile app prototype made in Figma. Focus on user-friendly design and UX principles.", technologies: "Figma | UX Design", image: mobileimg, link: "/projects/rent-a-toy" },
         { title: "Quack Tales", description: "A cooperative multiplayer game made in Unity.", technologies: "Unity | C# | Procreate", image: quacktalesimg, link: "/projects/quack-tales" },
         { title: "Cohort Manager", description: "A web application for managing student cohorts and courses.", technologies: "Java | Spring Boot | React", image: cohortimg, link: "/projects/cohort-manager" },
+        { title: "WolfsBane", description: "A 2D platformer prototype created in Unity", technologies: "Unity | C# | Animation", image: wolfimg, link: "/projects/wolfsbane" },
     ]
 
     return (
