@@ -11,6 +11,7 @@ import RentAToyPage from './pages/projects/RentAToyPage'
 import CohortPage from './pages/projects/CohortPage'
 import { useEffect } from 'react'
 import WolfsBanePage from './pages/projects/WolfsBanePage'
+import AboutPage from './pages/about/AboutPage'
 
 function App() {
   const { pathname } = useLocation();
@@ -25,6 +26,7 @@ function App() {
       <div className="overflow-scroll fixed h-[calc(100vh-4rem)] w-full z-[1]">
         <main className='min-h-[calc(100vh-18rem)]'>
           <Routes>
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/projects/flower" element={<FlowerPage />} />
             <Route path="/projects/recipes" element={<RecipesPage />} />
             <Route path="/projects/quack-tales" element={<QuackTalesPage />} />

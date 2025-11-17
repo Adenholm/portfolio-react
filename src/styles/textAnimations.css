@@ -17,7 +17,7 @@
 .content ol{
     list-style: none;
 
-    --height: 2rem;
+    --height: 3rem;
     height: var(--height);
     line-height: var(--height);
 
