@@ -22,8 +22,8 @@ const CohortPage: React.FC = () => {
             <div className="h-32"></div>
 
             <div className="flex w-fill justify-between max-w-6xl mx-auto pb-12 px-4">
-                <ProjectLink link="/projects/rent-a-toy" name="Rent a Toy" next={false} />
-                <ProjectLink link="/projects/flower" name="Flower" next={true} />
+                <ProjectLink link="/projects/quack-tales" name="Quack Tales" next={false} />
+                <ProjectLink link="/projects/wolfsbane" name="Wolfs Bane" next={true} />
             </div>
         </div>
     );
