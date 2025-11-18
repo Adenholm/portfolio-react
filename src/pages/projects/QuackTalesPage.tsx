@@ -1,6 +1,6 @@
 import backgroundimg from '../../assets/images/background.png';
 import ProjectDetails from '../../components/ProjectDetails';
-import quacktalesimg from '../../assets/images/quacktales.gif';
+import quacktalesimg from '../../assets/images/quacktales.png';
 import ProjectLink from '../../components/ProjectLink';
 
 const QuackTalesPage: React.FC = () => {
