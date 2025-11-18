@@ -1,6 +1,9 @@
+import { Link } from 'react-router-dom';
+import LeafUnderline from '../../assets/icons/leaf';
 import backgroundimg from '../../assets/images/background.png';
 import flowerimg from '../../assets/images/flower.png';
 import AnimatedPath from '../../components/AnimatedPath';
+import ArrowIcon from '../../assets/icons/arrow';
 
 
 const AboutPage: React.FC = () => {
@@ -21,7 +24,7 @@ const AboutPage: React.FC = () => {
             <img src={backgroundimg} alt="Background" className="fixed inset-0 object-cover object-left w-full h-full -z-10 blur scale-105" />
 
             <div className="mt-12 w-full justify-center bg-amber-50 pb-16">
-                <div className="max-w-6xl gap-8 items-center flex flex-col lg:flex-row mx-auto lg:py-0 py-12">
+                <div className="max-w-6xl gap-8 items-center flex flex-col lg:flex-row mx-auto lg:py-0 py-12 h-110">
                     <div className='lg:py-12 px-4 lg:px-0'>
                         <h1 className="text-7xl font-[Josefin_sans] mb-2">About me</h1>
                         <p className="text-2xl text-gray-500 font-[IBM_Plex_Serif] italic mb-4">I’m a software engineer with a passion for designing engaging user experiences.</p>
@@ -30,7 +33,7 @@ const AboutPage: React.FC = () => {
                         </p>
                     
                     </div>
-                    <img src={flowerimg} alt="Mockup" className="lg:max-w-120 object-cover h-100" />
+                    <img src={flowerimg} alt="Mockup" className="lg:max-w-120" />
                 </div>
 
                 <AnimatedPath color='#9c9050d2' size={1300} duration={2} strokeWidth={0.75} className='md:mx-[-5%] mt-[-10%] w-full rotate-180 scale-x-[-1] z-[-1]'/>
@@ -48,7 +51,7 @@ const AboutPage: React.FC = () => {
 
             <div className='flex w-fill justify-center md:p-24 p-8 flex-col gap-8 items-center bg-linear-to-t to-amber-50 from-10+'></div>
 
-            <div className='flex flex-col max-w-4xl mx-auto gap-4 bg-amber-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300'>
+            <div className='flex flex-col max-w-4xl lg:mx-auto gap-4 bg-amber-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mx-4'>
                 <h1 className="text-2xl text-gray-500 font-[IBM_Plex_Serif] italic mb-4">
                     "Code is like humor. When you have to explain it, it’s bad." – Cory House
                 </h1>
@@ -64,6 +67,15 @@ const AboutPage: React.FC = () => {
                         <p className="text-2xl text-gray-500 font-[IBM_Plex_Serif] italic mb-4">From a young age, I've been captivated by the world of technology and design.</p>
                         <p className="max-w-4xl text-md text-gray-600">
                         My journey began with a fascination for how things work, leading me to explore various programming languages and design principles. Over the years, I've honed my skills through formal education and hands-on projects, always striving to create solutions that are not only functional but also delightful to use. Today, I continue to push the boundaries of what's possible, driven by a passion for innovation and a commitment to excellence.
+                        </p>
+
+                        <p className="group relative w-max">
+                        <div className="flex flex-row gap-2 items-center border-2 border-[#848546ff] px-4 py-2 rounded-full mt-4 transition-colors duration-300 cursor-pointer">
+                        
+                            <Link to="/about/my-journey" className='text-[#848546ff] text-xl group-hover:font-bold transition-all duration-700'>Read more</Link>
+                            <ArrowIcon size={24} color="#848546ff" className="group-hover:rotate-x-180 transition-transform duration-700"/>
+                        </div>
+                        <LeafUnderline size={240} color="#848546ff" className="absolute -bottom-6 left-0 right-0 mx-auto"/>
                         </p>
                     
                     </div>

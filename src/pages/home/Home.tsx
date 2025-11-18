@@ -63,9 +63,9 @@ const Home: React.FC = () => {
                         <ol>
                             <li><span>Software engineer</span></li>
                             <li><span>Interaction designer</span></li>
-                            <li><span>Illustrator</span></li>
                             <li><span>Fullstack developer</span></li>
                             <li><span>UX Designer</span></li>
+                            <li><span>Illustrator</span></li>
                         </ol>
                     </h2>
                 </div>

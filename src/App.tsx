@@ -12,6 +12,7 @@ import CohortPage from './pages/projects/CohortPage'
 import { useEffect } from 'react'
 import WolfsBanePage from './pages/projects/WolfsBanePage'
 import AboutPage from './pages/about/AboutPage'
+import JourneyPage from './pages/about/JourneyPage'
 
 function App() {
   const { pathname } = useLocation();
@@ -27,6 +28,7 @@ function App() {
         <main className='min-h-[calc(100vh-18rem)]'>
           <Routes>
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/about/my-journey" element={<JourneyPage />} />
             <Route path="/projects/flower" element={<FlowerPage />} />
             <Route path="/projects/recipes" element={<RecipesPage />} />
             <Route path="/projects/quack-tales" element={<QuackTalesPage />} />
