@@ -6,7 +6,7 @@ const JourneyPage: React.FC = () => {
         <div>
             <img src={backgroundimg} alt="Background" className="fixed inset-0 object-cover object-left w-full h-full -z-10 blur scale-105" />
 
-            <div className="mt-12 w-full justify-center bg-amber-50 pb-16">
+            <div className="mt-12 w-full justify-center bg-amber-50 pb-16 flex flex-col items-center justify-center">
                 <div className="max-w-6xl items-center mx-auto lg:py-0 py-12">
                     <div className='lg:py-12 px-4 lg:px-0'>
                         <h1 className="text-7xl font-[Josefin_sans] mb-2">My Journey</h1>
