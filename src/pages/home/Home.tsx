@@ -100,7 +100,7 @@ const Home: React.FC = () => {
                     </motion.div>
                 </div>
             </motion.div>
-            <div className="flex w-fill justify-center bg-amber-50 md:p-24 p-8 flex-col gap-8 items-center">
+            <div id="projects"className="flex w-fill justify-center bg-amber-50 md:p-24 p-8 flex-col gap-8 items-center">
                 <div className='max-w-7xl justify-center items-center flex flex-col'>
                     <div className='bg-[#A7956C] inline-block rounded-md mb-12 group py-4'>
                         <h1 className="text-5xl font-[Josefin_sans] text-amber-50 px-8 rounded">Featured work</h1>

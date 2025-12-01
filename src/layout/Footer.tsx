@@ -4,7 +4,7 @@ const Footer = () => {
         <footer className="bg-amber-50 text-amber-900 p-6 flex justify-center items-center flex-col gap-4">
             <div className="flex items-center justify-between w-full max-w-6xl md:flex-row flex-col gap-8">
                 <div className="flex flex-col gap-2">
-                    <h2 className="text-2xl font-[Josefin_sans] mt-2">CONTACT ME</h2>
+                    <h2 id="contact" className="text-2xl font-[Josefin_sans] mt-2">CONTACT ME</h2>
                     <div className="text-sm flex items-center gap-2 w-fit mx-2"><EmailIcon /> <a href="mailto:hanna@adenholm.se" className="hover:underline">hanna@adenholm.se</a></div>
                     <div className="text-sm flex items-center gap-2 w-fit mx-2"><PhoneIcon /> <a href="tel:+46701234567" className="hover:underline">+46 70 123 45 67</a></div>
                 </div>

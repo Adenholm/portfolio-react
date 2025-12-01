@@ -55,13 +55,13 @@ const Navbar: React.FC = () => {
                             <LeavesUnderline size={48} color="#fff" className="absolute -bottom-2 left-0 right-0 mx-auto"/>
                         </li>
                         <li className="group relative w-max py-2 px-4">
-                            <Link to="/projects" className="block text-white">
+                            <Link to="/#projects" className="block text-white">
                                 Projects
                             </Link>
                             <LeavesUnderline size={48} color="#fff" className="absolute -bottom-2 left-0 right-0 mx-auto"/>
                         </li>
                         <li className="group relative w-max py-2 px-4">
-                            <Link to="/contact" className="block text-white">
+                            <Link to="/#contact" className="block text-white">
                                 Contact
                             </Link>
                             <LeavesUnderline size={48} color="#fff" className="absolute -bottom-2 left-0 right-0 mx-auto"/>
