@@ -10,14 +10,14 @@ import examenimg from '../../assets/images/examensbild.jpg';
 const AboutPage: React.FC = () => {
 
     const facts = [
-        { label: "Home town", value: "Gothenburg - sweden moved here from Ronneby for my studies " },
-        { label: "Education", value: "Bachelor of Software engineering at Chalmers, Master of Interaction Design at Chalmers and  Master of Engineering (software engineering) at Chalmers" },
-        { label: "Specialities", value: "Has experience across the stack with backend technologies such as  Java Spring Boot, Entity Framework, Azure, Docker, Relational databases and github workflows and Frontend technologies such as React, Angular, CSS, Javascript, Typescript and Figma. I am very flexible  and love to learn new frameworks and technologies." },
-        { label: "Hobbies", value: "Sketching, painting, crocheting, horseback-riding, longboarding, Aikido and gaming." },
-        { label: "Favourite Movies", value: "I am a big fan of all things studio Ghibli, especially Howl’s moving castle and Nausicää. " },
-        { label: "Favourite Games", value: "Zelda Breath of the Wild, Subnautica, A short hike" },
-        { label: "Favourite Series", value: "Violet Evergarden and Natsume’s book of friends." },
-        { label: "Inspiration", value: "Nature, cozy atmospheres, warm color palettes and intricate details." },
+        { label: "Where do I live?", value: "Gothenburg - sweden, moved here from Ronneby for my studies " },
+        { label: "What's my Education?", value: "Bachelor of Software engineering at Chalmers, Master of Interaction Design at Chalmers and  Master of Engineering (software engineering) at Chalmers" },
+        { label: "What are my Specialities?", value: "Has experience across the stack with backend technologies such as  Java Spring Boot, Entity Framework, Azure, Docker, Relational databases and github workflows and Frontend technologies such as React, Angular, CSS, Javascript, Typescript and Figma. I am very flexible  and love to learn new frameworks and technologies." },
+        { label: "Do I have any Hobbies?", value: "Yes, I have many, for example, Sketching, painting, crocheting, horseback-riding, longboarding, Aikido and gaming." },
+        { label: "What are my Favourite Movies?", value: "I am a big fan of all things studio Ghibli, especially Howl’s moving castle and Nausicää. " },
+        { label: "What are my Favourite Games?", value: "Zelda Breath of the Wild, Subnautica, A short hike" },
+        { label: "What are my Favourite Series?", value: "Violet Evergarden and Natsume’s book of friends." },
+        { label: "What inspires me?", value: "Nature, cozy atmospheres, warm color palettes and intricate details." },
     ];
 
     return (
