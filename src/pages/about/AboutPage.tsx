@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom';
 import LeafUnderline from '../../assets/icons/leaf';
 import backgroundimg from '../../assets/images/background.png';
-import flowerimg from '../../assets/images/flower.png';
 import AnimatedPath from '../../components/AnimatedPath';
 import ArrowIcon from '../../assets/icons/arrow';
+import portraitimg from '../../assets/images/portrait.jpg';
+import examenimg from '../../assets/images/examensbild.jpg';
 
 
 const AboutPage: React.FC = () => {
@@ -33,7 +34,7 @@ const AboutPage: React.FC = () => {
                         </p>
                     
                     </div>
-                    <img src={flowerimg} alt="Mockup" className="lg:max-w-120" />
+                    <img src={portraitimg} alt="portrait" className="lg:max-w-120" />
                 </div>
 
                 <AnimatedPath color='#9c9050d2' size={1300} duration={2} strokeWidth={0.75} className='md:mx-[-5%] mt-[-10%] w-full rotate-180 scale-x-[-1] z-[-1]'/>
@@ -61,7 +62,7 @@ const AboutPage: React.FC = () => {
 
             <div className="w-full justify-center bg-amber-50 pb-16">
                 <div className="max-w-6xl gap-8 items-center flex flex-col lg:flex-row mx-auto lg:py-0 py-12">
-                    <img src={flowerimg} alt="Mockup" className="lg:max-w-120 object-cover h-100" />
+                    <img src={examenimg} alt="Imgae from my graduation" className="lg:max-w-120 object-cover h-100 rounded-xl" />
                     <div className='lg:py-12 px-4 lg:px-0'>
                         <h1 className="text-7xl font-[Josefin_sans] mb-2">My Journey</h1>
                         <p className="text-2xl text-gray-500 font-[IBM_Plex_Serif] italic mb-4">From a young age, I've been captivated by the world of technology and design.</p>
