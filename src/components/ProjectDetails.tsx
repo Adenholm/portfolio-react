@@ -23,7 +23,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ title, subtitle, descri
     return (
         <div className="mt-12 w-full justify-center bg-amber-50 ">
             <div className="max-w-6xl gap-8 items-center flex flex-col lg:flex-row mx-auto lg:py-0 py-12">
-                <div className='lg:py-12 px-4 lg:px-0'>
+                <div className='lg:py-12 px-8 lg:px-0'>
                     <h1 className="text-7xl font-[Josefin_sans] mb-2">{title}</h1>
                     <p className="text-2xl text-gray-500 font-[IBM_Plex_Serif] italic mb-4">{subtitle}</p>
                     <p className="max-w-4xl text-md text-gray-600">

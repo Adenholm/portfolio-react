@@ -11,7 +11,7 @@ const RecipesPage: React.FC = () => {
         categories: ["Web Development", "UI/UX Design"],
         team: ["Hanna Adenholm"],
         year: "2025",
-        technologies: ["React", "TypeScript", ".NET", "PostgreSQL", "Entity Framework", "Docker", "Git workflows"],
+        technologies: ["React", "TypeScript", ".NET", "PostgreSQL", "Entity Framework", "Docker", "Git workflows", "Responsive Design"],
         img: recipeimg,
         github: "https://github.com/Adenholm/heap-recipes",
         website: "http://recipes.erik-persson.com/"

@@ -8,7 +8,7 @@ const JourneyPage: React.FC = () => {
 
             <div className="mt-12 w-full justify-center bg-amber-50 pb-16 flex flex-col items-center justify-center">
                 <div className="max-w-6xl items-center mx-auto lg:py-0 py-12 mt-24">
-                    <div className='lg:py-12 px-4 lg:px-0'>
+                    <div className='lg:py-12 px-8 lg:px-0'>
                         <h1 className="text-7xl font-[Josefin_sans] mb-2">My Journey</h1>
                         <p className="text-2xl text-gray-500 font-[IBM_Plex_Serif] italic mb-4">From curiosity to expertise: charting my path in tech.</p>
                         <p className="max-w-4xl text-md text-gray-600 mb-8">

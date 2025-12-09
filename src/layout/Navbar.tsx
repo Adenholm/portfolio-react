@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
                 <div
                     className={`${
                         isOpen ? 'block' : 'hidden'
-                    } w-full lg:flex lg:items-center lg:w-auto`}
+                    } w-auto lg:flex lg:items-center lg:w-auto`}
                 >
                     <ul className="lg:flex lg:space-x-4">
                         <li className="group relative w-max py-2 px-4">

@@ -79,7 +79,11 @@ const WolfsBanePage: React.FC = () => {
                     </div>
                     
                     <p>After that I did the final design in procreate on my iPad:</p>
-                    <img src={wolf} alt=""/>
+                    <img src={wolf} alt="" className='max-w-170 w-full'/>
+                </div>
+            </div>
+            <div className='flex flex-col md:flex-row max-w-6xl justify-center justify-between w-full gap-24 mx-auto my-24'>
+                <div className="flex  h-fit justify-center bg-[hsl(45_80%_95%_/_0.7)] backdrop-blur-lg p-8 flex-col gap-8 items-center rounded-4xl">
                     <h2 className="text-3xl font-bold font-[Josefin_sans] mt-16">Level design</h2>
                     <img src={levelsketch} alt="" className='h-55'/>
                     <div className="flex flex-col gap-4 md:flex-row items-center">
@@ -93,7 +97,10 @@ const WolfsBanePage: React.FC = () => {
                             <img src={sketch3} alt="" className='h-55'/>
                         </div>
                     </div>
-
+                </div>
+            </div>
+            <div className='flex flex-col md:flex-row max-w-6xl justify-center justify-between w-full gap-24 mx-auto my-24'>
+                <div className="flex  h-fit justify-center bg-[hsl(45_80%_95%_/_0.7)] backdrop-blur-lg p-8 flex-col gap-8 items-center rounded-4xl">
                     <h2 className="text-3xl font-bold font-[Josefin_sans] mt-16">Enemies</h2>
                     <p>My plan was to inlcude some different enemies so I did a few concept sketches 
                         for them. However, I didn't have time to implement all of them so the only one 
@@ -108,13 +115,16 @@ const WolfsBanePage: React.FC = () => {
                         <img src={enemy7} alt="" className='h-55'/>
                         <img src={enemy8} alt="" className='h-55'/>
                     </div>
-
+                </div>
+            </div>
+            <div className='flex flex-col md:flex-row max-w-6xl justify-center justify-between w-full gap-24 mx-auto my-24'>
+                <div className="flex  h-fit justify-center bg-[hsl(45_80%_95%_/_0.7)] backdrop-blur-lg p-8 flex-col gap-8 items-center rounded-4xl">
                     <h2 className="text-3xl font-bold font-[Josefin_sans] mt-16">Animations</h2>
                     <p>The animations were probably the part of the process that took the longest. I 
                         animated all the frames by hand in procreate. In total I did four for the wolf 
                         and one for the crow. This was also basically the first time I animated anything 
                         so I had to watch some tutorials for this as well.</p>
-                    <div className="flex flex-row items-center max-w-6xl overflow-hidden rounded-xl w-fit mx-auto">
+                    <div className="flex flex-col md:flex-row items-center max-w-6xl overflow-hidden rounded-xl w-fit mx-auto">
                         <img src={trot} alt="" className='h-55'/>
                         <img src={dash} alt="" className='h-55'/>
                         <img src={jump} alt="" className='h-55'/>
@@ -125,7 +135,7 @@ const WolfsBanePage: React.FC = () => {
             <div className="my-24 w-full justify-center bg-amber-50 ">
             <div className="max-w-6xl gap-8 items-center flex flex-col lg:flex-row mx-auto lg:py-0 py-12">
                 <img src={wolfimg} alt="Mockup" className="lg:max-w-120 object-cover h-170" />
-                <div className='lg:py-12 px-4 lg:px-0'>
+                <div className='lg:py-12 px-8 lg:px-0'>
                     <h2 className="text-3xl font-bold font-[Josefin_sans] mt-16">Result</h2>
                     <div className="content group">
                         <div>
