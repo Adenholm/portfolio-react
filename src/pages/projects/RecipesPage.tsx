@@ -4,6 +4,22 @@ import ProjectDetails from '../../components/ProjectDetails';
 import ProjectLink from '../../components/ProjectLink';
 
 const RecipesPage: React.FC = () => {
+    const imageModules = import.meta.glob("/src/assets/images/recipe/recipe*.{png,jpg,jpeg,webp}", { eager: true });
+
+    interface ImageModule {
+    default: string;
+    }
+  const recipeImages = Object.entries(imageModules)
+    .map(([path, mod]) => ({
+      path,
+      src: (mod as ImageModule).default,
+    }))
+    .sort((a, b) => {
+      const numA = parseInt(a.path.match(/recipe(\d+)\.\w+$/)?.[1] || "0");
+      const numB = parseInt(b.path.match(/recipe(\d+)\.\w+$/)?.[1] || "0");
+      return numA - numB;
+    });
+
     const details = {
         title: "Recipes",
         subtitle: "A Recipe Management Application",
@@ -21,7 +37,11 @@ const RecipesPage: React.FC = () => {
         <div>
             <img src={backgroundimg} alt="Background" className="fixed inset-0 object-cover object-left w-full h-full -z-10 blur scale-105" />
             <ProjectDetails {...details} />
-            <div className="h-32"></div>
+            <div className="flex flex-col gap-8 max-w-5xl mx-auto py-24">
+                 {recipeImages.map((img, index) => (
+                    <img key={index} src={img.src} alt={`Recipe ${index + 1}`} />
+                ))}
+            </div>
             
             <div className="flex w-fill justify-between max-w-6xl mx-auto pb-12">
                 <ProjectLink link="/projects/flower" name="Flower" next={false} />
