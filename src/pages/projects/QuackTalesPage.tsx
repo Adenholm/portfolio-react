@@ -7,7 +7,7 @@ const QuackTalesPage: React.FC = () => {
     const details = {
         title: "Quack Tales",
         subtitle: "A Cooperative Multiplayer Game Made in Unity",
-        description: "Quack Tales is a cooperative multiplayer game developed in Unity, where players embark on adventurous quests as charming duck characters. The game emphasizes teamwork and strategy, requiring players to collaborate to overcome challenges and achieve common goals. This was my bachelor thesis project where the goal was to create a collaborative game. The game can be played by two to four players where you play as the ducklings Bengt, Benny, Bongo and Bosse trying to find their way back to their mother.",
+        description: "Quack Tales is a cooperative multiplayer game developed in Unity, where players embark on adventurous quests as charming duck characters. The game emphasizes teamwork and strategy, requiring players to collaborate to overcome challenges and achieve common goals. This was my bachelor thesis project where the goal was to create a collaborative game. The game can be played by two to four players where you play as the ducklings Bengt, Benny, Bongo and Bosse trying to find their way back to their mother. All art and animation was created by me.",
         categories: ["Game Development", "Multiplayer Design"],
         team: ["Hanna Adenholm, Poya Shirin", "Daniel Rygaard, Tove Nilsson", "Carl Malmgren & Ibrahim Abdulhussein"],
         year: "2024",

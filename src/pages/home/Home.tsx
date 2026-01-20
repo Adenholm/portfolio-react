@@ -57,9 +57,9 @@ const Home: React.FC = () => {
         <>
             <ScrollingBg/>
             <div className="min-h-screen flex flex-col items-center justify-center lg:flex-row lg:px-48">
-                <div className= "xl:w-3xl lg:w-100 w-96">
-                    <h1 className="xl:text-8xl lg:text-7xl text-6xl font-[Josefin_sans] text-amber-50 xl:w-3xl w-96">HANNA ADENHOLM</h1>
-                    <h2 className="xl:text-4xl lg:text-2xl text-xl font-[Josefin_sans] text-amber-50 mt-4 md:w-3xl w-96 content">
+                <div className= "2xl:w-3xl lg:w-100 w-96">
+                    <h1 className="2xl:text-8xl lg:text-7xl text-6xl font-[Josefin_sans] text-amber-50 2xl:w-3xl w-96">HANNA ADENHOLM</h1>
+                    <h2 className="2xl:text-4xl lg:text-2xl text-xl font-[Josefin_sans] text-amber-50 mt-4 md:w-3xl w-96 content">
                         <ol>
                             <li><span>Software engineer</span></li>
                             <li><span>Interaction designer</span></li>
